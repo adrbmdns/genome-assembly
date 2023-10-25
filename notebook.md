@@ -32,10 +32,16 @@ Okay from my opinion, Pod5 is just another file format that has some advantages 
 
 Dorado basecalling is faster when using Pod5 files. [6] 
 
+## Learn package NanoPlot 
+
+What are the results look like? Maybe need to read the documentation. 
+
 ## What are simplex reads and duplex reads?
 
+## What is `dorado duplex`? 
 
 ## How does de novo genome assembly works? The theory. 
+
 
 ## References
 
