@@ -36,9 +36,40 @@ Dorado basecalling is faster when using Pod5 files. [6]
 
 What are the results look like? Maybe need to read the documentation. 
 
-## What are simplex reads and duplex reads?
+## Basecalling with Dorado
 
-## What is `dorado duplex`? 
+__Simplex basecalling__
+
+One strand at a time. [7]
+
+__Duplex basecalling__
+
+Two strands from the single molecule were reading at the same time. It represents the same sequence. We can jointly infer over both of those to obtain a more accurate individual output read. [7]
+
+What happening on the flow cell is, a double-stranded DNA molecule. One end by chance will start sequencing first, as it goes through it unzips from the second strand. When the first strand finishes sequencing that leaves the five prime end and the motor of the second strand in very close proximity to the pore. So with some probability it will follow its mate through the same pore and sequence right after. So we detected this duplex pair in the output reads by finding two complementary sequences that went through the same pore one after another. [7]
+
+Duplex is very beneficial to accuracies. 
+
+## Q20 and Q30 data? How can I see it? 
+
+## ONT ultralong and pore-c sequencing? What's the difference? 
+
+## Telomere to Telomere (T2T) genome assemblies 
+
+__Verkko__
+
+Takes in data like:
+
+* Long, high accuracy reads (~30kb at Q30), Duplex
+* Ultralong reads (~100kb at Q20)
+* Parental reads/chromatin conformation capture (Pore-C) 
+
+__Hifiasm__ 
+
+
+
+
+## Validation, mapping reads back to genome assembly 
 
 ## How does de novo genome assembly works? The theory. 
 
@@ -51,3 +82,4 @@ What are the results look like? Maybe need to read the documentation.
 4. [Pod5 File Format Documentation](https://pod5-file-format.readthedocs.io/en/latest/index.html)
 5. [Pod5 Format Specification](https://pod5-file-format.readthedocs.io/en/latest/SPECIFICATION.html) 
 6. Dorado GitHub - [README.md](https://github.com/nanoporetech/dorado) 
+7. Oxford Nanopore Technologies - [Advances in basecalling research and development](https://www.youtube.com/watch?v=mnrk_5NhQUQ) 
