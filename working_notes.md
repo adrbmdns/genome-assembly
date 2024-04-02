@@ -161,7 +161,7 @@ flye --nano-raw sample.fastq --out-dir outdir --threads 10 --asm-coverage 50 -g 
 
 *Final graph*:
 
-![graph](./flye-results/no-filtering/graph.png)
+![graph](./figs/flye-no-filtering.png)
 
 __Assembly 03 - with `--nano-raw` and `--meta`:__
 
@@ -171,7 +171,7 @@ flye --nano-raw sample.fastq --out-dir outdir --threads 10 --meta
 
 *Final graph:* 
 
-![graph-meta](./flye-results/no-filtering-meta/graph.png)
+![graph-meta](./figs/flye-no-filtering-meta.png)
 
 __Assembly 04 - with only `--nano-hq`:__
 
@@ -183,7 +183,7 @@ flye --nano-hq sample.fastq --out-dir outdir --threads 10
 
 *Final graph:* 
 
-![graph-hq](./flye-results/no-filtering-hq/graph.png)
+![graph-hq](./figs/flye-no-filtering-hq.png)
 
 __Assembly 05 - with `--nano-hq` and `meta`:__ 
 
@@ -195,7 +195,7 @@ flye --nano-hq sample.fastq --out-dir outdir --threads 10 --meta
 
 *Final graph:* 
 
-![graph-hq](./flye-results/no-filtering-hq-meta/graph.png)
+![graph-hq](./figs/flye-no-filtering-hq-meta.png)
 
 
 ## Visualising Results - AGB
